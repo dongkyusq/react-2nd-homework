@@ -22,6 +22,13 @@ const initialState = [
     detail: "모던 자바 스크립트",
     price: "40,500",
   },
+  {
+    id: 2,
+    date: "2024-02-15",
+    item: "간식",
+    detail: "아이스크림",
+    price: "2,500",
+  },
 ];
 
 const buys = (state = initialState, action) => {

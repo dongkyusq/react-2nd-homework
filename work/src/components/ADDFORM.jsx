@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBuy } from "../../redux/modules/buys";
+import { Section } from "../Home";
 
 const ADDFORM = () => {
   const [buy, setBuy] = useState("");
@@ -11,7 +12,7 @@ const ADDFORM = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <Section>
       <input
         type="text"
         value={buy}
@@ -55,7 +56,7 @@ const ADDFORM = () => {
       >
         저장
       </button>
-    </div>
+    </Section>
   );
 };
 

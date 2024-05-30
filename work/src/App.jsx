@@ -1,17 +1,21 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
 
 import "./App.css";
 import { useSelector } from "react-redux";
-import ADDFORM from "./components/ADDFORM";
-import BuyList from "./components/BuyList";
 
 const App = () => {
   return (
     <div>
-      <ADDFORM />
-      <BuyList />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail" element={"지출페이지 입니다. "} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
